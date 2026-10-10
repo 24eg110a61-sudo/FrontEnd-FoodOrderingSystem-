@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f6f6f8; color: #222; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #fff; box-shadow: 0 1px 4px #0001; }
+header h1 { margin: 0; font-size: 20px; cursor: pointer; }
+nav { display: flex; gap: 14px; align-items: center; }
+main { max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+.card { background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 4px #0001; }
+.card p { margin: 4px 0; color: #555; }
+.clickable { cursor: pointer; }
+.clickable:hover { box-shadow: 0 3px 10px #0002; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.split { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: start; }
+.cart { position: sticky; top: 16px; }
+.auth { max-width: 360px; margin: 40px auto; display: flex; flex-direction: column; gap: 10px; }
+input { padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; width: 100%; }
+.search { margin-bottom: 16px; }
+button { cursor: pointer; font-size: 14px; }
+button.primary { background: #e8590c; color: #fff; border: 0; padding: 10px 14px; border-radius: 6px; margin-top: 8px; }
+button.primary:disabled { opacity: .5; cursor: not-allowed; }
+button.link { background: none; border: 0; color: #e8590c; padding: 0; }
+.qty { display: flex; align-items: center; gap: 8px; }
+.qty button { width: 28px; height: 28px; border-radius: 50%; border: 1px solid #ccc; background: #fff; }
+.badge { background: #fff3e6; color: #e8590c; padding: 2px 8px; border-radius: 12px; font-size: 12px; }
+.err { color: #c92a2a; }
+@media (max-width: 700px) { .split { grid-template-columns: 1fr; } }
